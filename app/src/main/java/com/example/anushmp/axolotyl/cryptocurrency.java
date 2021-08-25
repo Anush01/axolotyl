@@ -129,11 +129,23 @@ public class cryptocurrency extends Fragment {
          //fillList();
         //fillCurrencyNames();
 
+        currencyRecycler = currencyView.findViewById(R.id.currencyrecycler);
+        refresher = currencyView.findViewById(R.id.swipelay);
+
+        currencyRecyclerAdapter cra = new currencyRecyclerAdapter(getContext(),coindata);
+
+        LinearLayoutManager llm = new LinearLayoutManager(getContext());
+
+        currencyRecycler.setLayoutManager(llm);
+        currencyRecycler.setAdapter(cra);
+
 
 
         Retrofit browser = networker.getRetrofitObject();
 
         coingeckoapi api = browser.create(coingeckoapi.class);
+
+
 
 
 
@@ -163,6 +175,13 @@ public class cryptocurrency extends Fragment {
 
                 }
 
+               // String logging =
+
+                Log.d("anushlogs", currencyinfo.size() + "");
+                Log.d("anushlogs", Thread.currentThread().getName());
+
+                cra.notifyDataSetChanged();
+
 
 
 
@@ -183,22 +202,14 @@ public class cryptocurrency extends Fragment {
 
 
 
-        currencyRecycler = currencyView.findViewById(R.id.currencyrecycler);
-        refresher = currencyView.findViewById(R.id.swipelay);
 
-       currencyRecyclerAdapter cra = new currencyRecyclerAdapter(getContext(),coindata);
-
-        LinearLayoutManager llm = new LinearLayoutManager(getContext());
-
-        currencyRecycler.setLayoutManager(llm);
-        currencyRecycler.setAdapter(cra);
 
 
         refresher.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
                 //refreshList();
-                //cra.notifyDataSetChanged();
+               // cra.notifyDataSetChanged();
                 refresher.setRefreshing(false);
             }
         });
@@ -274,4 +285,6 @@ public class cryptocurrency extends Fragment {
             coindata.add("name of coin" + rand.nextInt(100) + "" );
         }
     }
+
+
 }
