@@ -8,7 +8,10 @@
         <entry key="app/src/main/res/drawable/ic_baseline_notifications.xml" value="0.30885416666666665" />
         <entry key="app/src/main/res/drawable/ic_baseline_portfolio.xml" value="0.30885416666666665" />
         <entry key="app/src/main/res/drawable/ic_baseline_search.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/activity_firebaseauthtest.xml" value="0.23489583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_signintestview.xml" value="0.23489583333333333" />
+        <entry key="app/src/main/res/layout/activity_signuptestview.xml" value="0.23489583333333333" />
         <entry key="app/src/main/res/layout/currencyitemview.xml" value="0.67" />
         <entry key="app/src/main/res/layout/fragment_balancesheet.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/fragment_cryptocurrency.xml" value="0.29270833333333335" />

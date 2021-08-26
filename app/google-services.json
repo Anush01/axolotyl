@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384796470557",
+    "project_id": "coingecko-7fc5f",
+    "storage_bucket": "coingecko-7fc5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384796470557:android:feeefb33b021ae74ba05f4",
+        "android_client_info": {
+          "package_name": "com.example.anushmp.axolotyl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384796470557-0npahuk06nfg35rpfvgp8cf3fs5mtu4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnTMGIJZETP-vzXbHvyuMB8wZYa_4BILs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384796470557-0npahuk06nfg35rpfvgp8cf3fs5mtu4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,12 +5,89 @@
     android:background="@color/coingeckoAnotherGrey"
     >
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="portfolio"
+        android:id="@+id/closebuttonf"
+        android:src="@drawable/ic_baseline_closebutton"
+        android:layout_toLeftOf="@+id/headingport"
+        android:layout_margin="20dp"
+        android:contentDescription="close button"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/headingport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text=" My portfolio/My favorites"
         android:textColor="@color/white"
-        android:textSize="40sp"
-        android:layout_margin="20dp"></TextView>
+        android:textSize="25sp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/coingeckoLightGrey"
+        android:layout_below="@+id/headingport"
+        android:layout_marginTop="20dp"
+        ></View>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingport"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Enter email here"
+        android:padding="20dp"
+        android:textColor="@color/coingeckoAnotherGrey"
+        android:textColorHint="@color/coingeckoAnotherGrey"></EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Enter password here"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/coingeckoAnotherGrey"
+        android:textColorHint="@color/coingeckoAnotherGrey"></EditText>
+
+
+    <TextView
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/coingeckoGreen"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Log In or Sign Up"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"></TextView>
 
 </RelativeLayout>
