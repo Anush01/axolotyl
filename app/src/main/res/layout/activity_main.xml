@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#04044C"
+    android:background="@color/coingeckoDarkGrey"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/titleview"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#141E61"></View>
+        android:background="@color/coingeckoLightGrey"></View>
 
 
     <ImageView
@@ -37,8 +37,8 @@
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/notifications"
         android:fontFamily="@font/lato_italic"
-        android:text="coingecko"
-        android:textColor="#96FD3D"
+        android:text="CoinGecko"
+        android:textColor="@color/coingeckoGreen"
 
         android:textSize="25dp"></TextView>
 
@@ -65,11 +65,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/titleview"
 
-        android:background="#141E61"
+        android:background="@color/coingeckoLightGrey"
         app:tabIndicatorColor="#96FD3D"
-        app:tabRippleColor="#96FD3D"
-
         app:tabMode="scrollable"
+
+        app:tabRippleColor="#96FD3D"
 
         app:tabTextAppearance="@style/MyCustomTextAppearance"
         app:tabTextColor="#EEEEEE">
@@ -87,12 +87,11 @@
     </androidx.viewpager2.widget.ViewPager2>
 
     <FrameLayout
+        android:id="@+id/fvl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tablay"
         android:layout_above="@+id/bottomnav"
-        android:id="@+id/fvl"
-        ></FrameLayout>
+        android:layout_below="@+id/tablay"></FrameLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -100,9 +99,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#141E61"
+        android:background="@color/coingeckoLightGrey"
         app:itemIconTint="#EEEEEE"
-        app:itemRippleColor="#6BFF43"
+        app:itemRippleColor="@color/coingeckoGreen"
         app:itemTextColor="#EEEEEE"
         app:menu="@menu/bottom_nav_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
 

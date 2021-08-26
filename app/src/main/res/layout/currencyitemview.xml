@@ -24,7 +24,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#031570"
+            android:background="@color/coingeckoLightGrey"
             android:id="@+id/blackline"
             android:layout_below="@+id/currencytext"
             ></View>

@@ -7,4 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="coingeckoBlue">#04044C</color>
+    <color name="coingeckoLightBlue">#141E61</color>
+    <color name="coingeckoNavyGreen">#96FD3D</color>
+    <color name="coingeckoWordsGrey">#EEEEEE</color>
+    <color name="coingeckoHRblue">#031570</color>
+    <color name="coingeckostatusbar">#0F044C</color>
+
+
+    <color name = "coingeckoLightGrey">#5E5E5E</color>
+    <color name="coingeckoDarkGrey">#4C4C4C</color>
+    <color name="coingeckoWhite">#F7F7F7</color>
+    <color name="coingeckoGreen">#8BC53F</color>
+    <color name="coingeckoAnotherGrey">#333333</color>
+
 </resources>
