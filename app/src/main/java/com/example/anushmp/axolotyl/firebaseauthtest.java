@@ -99,11 +99,14 @@ public class firebaseauthtest extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                auth.signOut();
 
-                Toast.makeText(firebaseauthtest.this, "signout successfull", Toast.LENGTH_SHORT).show();
-                displayName.setText("signed out. sign in or sign up or relaunch this activity.");
+               if(auth.getCurrentUser() != null) {
+                   auth.signOut();
 
+                   Toast.makeText(firebaseauthtest.this, "signout successfull", Toast.LENGTH_SHORT).show();
+                   displayName.setText("signed out. sign in or sign up or relaunch this activity.");
+
+               }
             }
         });
 

@@ -6,11 +6,45 @@
     >
 
     <TextView
+        android:id="@+id/moreheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="more"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"></TextView>
+
+    <ImageView
+        android:id="@+id/closebuttonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@+id/moreheader"
+        android:src="@drawable/ic_baseline_closebutton"></ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/coingeckoLightGrey"
+        android:id="@+id/div"
+        android:layout_below="@+id/moreheader"
+        ></View>
+
+    <TextView
+        android:id="@+id/authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div"
+        android:text="Authentication"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:background="@color/coingeckoLightGrey"
+        android:padding="10dp"
+        android:textColor="@color/coingeckoWordsGrey"
+        ></TextView>
+
 
 </RelativeLayout>
