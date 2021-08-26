@@ -32,6 +32,7 @@ public class cryptocurrency extends Fragment {
     RecyclerView currencyRecycler;
     SwipeRefreshLayout refresher;
     List<currencyDataModel> currencyinfo;
+    //currencyRecyclerAdapter cra;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -132,7 +133,7 @@ public class cryptocurrency extends Fragment {
         currencyRecycler = currencyView.findViewById(R.id.currencyrecycler);
         refresher = currencyView.findViewById(R.id.swipelay);
 
-        currencyRecyclerAdapter cra = new currencyRecyclerAdapter(getContext(),coindata);
+       currencyRecyclerAdapter cra = new currencyRecyclerAdapter(getContext(),coindata);
 
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
 

@@ -26,6 +26,8 @@ public class priceAlertJobService extends JobService {
             public void run() {
 
                 Log.d(TAG, "run: ran the job");
+
+
                 
             }
         }).start();
