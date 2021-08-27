@@ -172,7 +172,9 @@ public class cryptocurrency extends Fragment {
                     String symbol = currency.getSymbol();
                     String id = currency.getId();
 
-                    coindata.add("Name: " + name + "\nSymbol: " + symbol + "\nid: " + id);
+                    int oneindexed = i + 1;
+
+                    coindata.add(oneindexed + ".  Name: " + name + "\nSymbol: " + symbol + "\nid: " + id);
 
 
                 }

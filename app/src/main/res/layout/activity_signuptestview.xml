@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/coingeckoAnotherGrey"
     tools:context=".signuptestview">
+
+    <ImageView
+        android:id="@+id/coinlogosignup"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/emailinputsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/coinboyp"></ImageView>
 
     <EditText
         android:id="@+id/emailinputsignup"
@@ -15,7 +25,11 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:hint="enter email to sign up"></EditText>
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:hint="enter email to sign up"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"></EditText>
 
     <EditText
         android:id="@+id/passwordinputsignup"
@@ -27,6 +41,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:hint="enter password to sign up"
         android:inputType="textPassword"></EditText>
 

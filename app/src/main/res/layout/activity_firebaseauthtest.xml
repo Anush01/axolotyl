@@ -4,25 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/coingeckoAnotherGrey"
     tools:context=".firebaseauthtest">
 
+    <ImageView
+        android:id="@+id/coinlogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/firebasesignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/coinboyp"></ImageView>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="signup"
-        android:layout_centerInParent="true"
         android:id="@+id/firebasesignup"
-        android:textSize="40sp"
-        ></TextView>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="signin"
-        android:id="@+id/firebasesignin"
         android:layout_centerInParent="true"
-        android:textSize="40sp"
+        android:background="@drawable/snackbiteshape"
+        android:padding="20dp"
+        android:text="signup"
+        android:textColor="@color/coingeckoLightGrey"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:id="@+id/firebasesignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/firebasesignup"
-        ></TextView>
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/snackbiteshape"
+        android:padding="20dp"
+        android:text="login"
+        android:textColor="@color/coingeckoLightGrey"
+        android:textSize="30sp"></TextView>
 
     <TextView
         android:id="@+id/signinsuccess"
@@ -31,6 +47,10 @@
         android:layout_below="@id/firebasesignin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/coingeckoLightGrey"
+        android:gravity="center"
         android:text="If you have signed in your name will be here"
         android:textSize="20sp"></TextView>
     <TextView
@@ -38,6 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/signinsuccess"
         android:text="Sign Out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:id="@+id/signoutbutton"
         android:background="#ff0000"
         android:padding="10dp"

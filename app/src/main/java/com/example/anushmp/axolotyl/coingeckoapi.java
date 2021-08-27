@@ -11,4 +11,7 @@ public interface coingeckoapi {
     @GET("coins/list")
     Call<List<currencyDataModel>> getcurrencylist();
 
+   // @GET("/simple/price")
+   // Call<>
+
 }

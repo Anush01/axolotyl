@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:id="@+id/lineartabs"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/greenpill1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="24hrs"
+                android:background="@drawable/snackbiteshape"
+                android:textSize="20sp"
+                android:padding="10dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/greenpill2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="ascending"
+                android:background="@drawable/snackbiteshape"
+                android:textSize="20sp"
+                android:padding="10dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/greenpill3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="USD"
+                android:background="@drawable/snackbiteshape"
+                android:textSize="20sp"
+                android:padding="10dp"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

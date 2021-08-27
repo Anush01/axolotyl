@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Axolotyl">
         <activity
+            android:name=".marketviewfull"
+            android:exported="true" />
+        <activity
             android:name=".signintestview"
             android:exported="true" />
         <activity
