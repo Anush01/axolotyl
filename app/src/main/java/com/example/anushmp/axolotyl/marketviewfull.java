@@ -45,6 +45,13 @@ public class marketviewfull extends AppCompatActivity {
 
 
 
+
+
+
+
+
+
+
         if(coinid != null){bignumber.setText(coinid);}
 
 
