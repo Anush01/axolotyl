@@ -8,6 +8,8 @@ import retrofit2.http.Query;
 
 public interface coingeckoapi {
 
+    //String coinid = null;
+
 
     @GET("coins/list")
     Call<List<currencyDataModel>> getcurrencylist();
